@@ -39,3 +39,13 @@
 
 # debug information files
 *.dwo
+
+# data
+*.csv
+
+# macOS shit
+.DS_Store
+
+# CMake shit
+build/
+.cache/
