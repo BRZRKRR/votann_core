@@ -9,7 +9,7 @@
 namespace votann {
 	class Portfolio {
 	public:
-		Portfolio() = default;
+		Portfolio() = delete;
 		Portfolio(std::unique_ptr<IStrategy> strategy);
 
 		void processRow(const DataRow<9>& row);

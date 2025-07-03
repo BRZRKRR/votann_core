@@ -6,7 +6,7 @@ namespace votann {
 
 	class BacktestEngine {
 	public:
-		BacktestEngine() = default;
+		BacktestEngine() = delete;
     	BacktestEngine(Portfolio& portfolio);
 		void load_and_run(const std::string& filename);
 

@@ -3,10 +3,15 @@
 #include <iostream>
 
 class Logger {
+private:
+	std::string _path;
 public:
-    void log(const DataRow<9>& row) {
-        std::cout << "[LOG] Timestamp: " << row.unix_timestamp << " | Prices: ";
-        for (const auto& p : row.prices) std::cout << p << " ";
+	Logger(){}
+	Logger(const std::string& path): _path(path) {}
+
+
+    void log(const std::string& msg) {
+        std::cout << msg;
         std::cout << std::endl;
     }
 };
